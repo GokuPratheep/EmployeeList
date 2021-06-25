@@ -1,0 +1,5 @@
+<h4>List of Customers</h4>
+<div *ngFor="let customer of customers$ | async; let i=index">
+  <span>{{i+1}}.</span> <span class="detailEl">{{customer.name}}</span><span>&nbsp;<input class="buttonSave" value="{{customer.name}}" type="text"><button class="detailEl" (click)="openEditElement($event)">Edit</button><button class="buttonSave" (click)="updateState($event,customer.id,customer.name)">Save</button></span>
+</div>
+

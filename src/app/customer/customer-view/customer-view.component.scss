@@ -1,0 +1,22 @@
+.buttonSave
+{
+  display: none;
+}
+
+.detailEl
+{
+  display: inline-block;
+}
+.active
+{
+  .buttonSave
+  {
+    display: inline-block;
+  }
+  .detailEl
+  {
+    display: none;
+  }
+}
+
+
