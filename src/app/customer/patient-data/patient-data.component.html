@@ -1,0 +1,14 @@
+<div class="patients">
+    <div class="patients--name patientList" *ngFor="let patient of patients$ | async; let i=index">
+        <div class="patients" [ngClass]="{'active': patient.name === patient$.name}"> 
+            <span class="notUpdate">{{patient.name}}</span>
+            <input class="update" type="text" value="{{patient.name}}">
+            <button class="notUpdate" (click)="updatePat($event)">Update</button>
+            <button (click)="deletePat(patient.id)">Delete</button>
+            <button class="update" (click)="updatePatientEl(patient.id,$event)">Save</button>
+        </div>
+    </div>
+    <div class="patients--data">
+        {{patient$.name}}
+    </div>
+</div>

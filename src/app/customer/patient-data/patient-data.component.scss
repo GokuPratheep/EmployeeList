@@ -1,0 +1,25 @@
+.patientList
+{
+    display: flex;
+    align-items: center;
+    .update
+    {
+        display: none;
+    }
+    &.active
+    {
+        .notUpdate
+        {
+            display: none;
+        }
+        .update
+        {
+            display: inline-block;
+        }
+    }
+}
+
+.patients
+{
+    display: flex;
+}
